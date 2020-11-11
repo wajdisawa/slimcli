@@ -1,0 +1,9 @@
+version: '3.7'
+services:
+  slimcli-service:
+    build:
+      context: docker
+      target: slimcli
+    restart: on-failure
+    volumes:
+      - ".:/app:rw"

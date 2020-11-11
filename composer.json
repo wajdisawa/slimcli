@@ -1,0 +1,31 @@
+{
+  "name": "wajdisawa/slimcli",
+  "description": "This is a microservice to read a bounded data provided as csv to be validated and transformed into service object.",
+  "type": "project",
+  "license": "MIT",
+  "keywords": ["slim","cli","command"],
+  "authors": [
+    {
+      "name": "wajdi sawafta",
+      "email": "wajdee.sawaf@gmail.com"
+    }
+  ],
+  "minimum-stability": "stable",
+  "autoload": {
+    "psr-4": { "Wajdisawa\\slimcli\\": "src/" }
+  },"autoload-dev": {
+    "psr-4": {"Wajdisawa\\slimcli\\Tests\\": "tests/"}
+  },
+  "require": {
+    "php": "~7.4",
+    "ext-json": "*",
+    "php-di/php-di": "^6.2",
+    "php-di/slim-bridge": "^3.0",
+    "slim/slim": "^4.5",
+    "symfony/console": "^5.0",
+    "slim/psr7": "^1.2"
+  },
+  "require-dev": {
+    "phpstan/phpstan": "^0.12.37"
+  }
+}
